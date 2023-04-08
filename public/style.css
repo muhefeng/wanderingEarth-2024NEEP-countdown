@@ -3,6 +3,7 @@
   src:url('./字魂59号-创粗黑字体.ttf')format('truetype');
 }
 body {
+  overflow: hidden;
   font-family: zihun59;
     position: relative;
     height: 100vh;
