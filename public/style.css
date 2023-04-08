@@ -1,0 +1,49 @@
+@font-face {
+  font-family: zihun59;
+  src:url('./字魂59号-创粗黑字体.ttf')format('truetype');
+}
+body {
+  font-family: zihun59;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 5px 5px 15px rgba(93, 86, 86, 0.4);
+  }
+  div.bar{
+    height: 5vh;
+    width: 5px;
+  }
+  div.leftBord{
+    border-left-style:solid;
+    border-left-width: 10px;
+    border-left-color: rgb(218, 56, 56);
+    border-left:thick solid rgb(218, 56, 56);
+    height: 101px;
+  }
+  p{
+    margin: 5px;
+  }
+  #Distance2024{
+    position: relative;
+    color:#dfd9d6;
+    font-size: 60px;
+    left: -179px;
+  }
+  #remaining{
+    margin-left: 14px;
+    color:#dfd9d6;
+    font-size: 60px;
+    position: relative;
+    top:-95px;
+  }
+  p{
+    color:#dfd9d6;
+  }
+  #countdown{
+    color: rgb(218, 56, 56);
+    font-size: 162px;
+  }

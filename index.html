@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./public/style.css" />
+</head>
+<body style="background:url(./public/pic.jpg)center/cover no-repeat">
+    <div style="
+        position:absolute;
+        bottom:0;
+        right:0;
+        margin-right: 100px;
+        margin-bottom:100px ;
+    ">
+        <p id="Distance2024">距2024考研</p>
+        <div class="leftBord" style="float: left;">
+            <span id="remaining">还剩<span id="countdown"></span>天</span>
+            <p style="position: relative;top:-122px;margin-left: 20px;font-family: SimHei;">NATIONAL ENTRANCE EXAMINATION FOR POSTGRADUATE</p>
+            <p style="position: relative;top:-122px;margin-left: 20px;font-family: SimHei;">IN <span id="pCountdown"></span> DAYS</p>
+        </div>
+    </div>
+    
+
+</body>
+<script>
+    function countDown() {
+      let deadline = new Date("2023-12-24T08:30:00");
+      let seconds = (deadline.getTime() - Date.now()) / 1000;
+      let gepDays = Math.floor(seconds / 60 / 60 / 24);
+      document.querySelector(
+        "#countdown"
+      ).innerHTML = `${gepDays}`;
+      document.querySelector(
+        "#pCountdown"
+      ).innerHTML = `${gepDays}`;
+
+    }
+    countDown()
+  </script>
+</html>
