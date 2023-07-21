@@ -2,6 +2,10 @@
   font-family: zihun59;
   src:url('./字魂59号-创粗黑字体.ttf')format('truetype');
 }
+@font-face {
+  font-family: Rajdhani;
+  src: url('Rajdhani-Medium-3.ttf');
+}
 body {
   overflow: hidden;
   font-family: zihun59;
@@ -27,6 +31,7 @@ body {
   }
   p{
     margin: 5px;
+    color:#dfd9d6;
   }
   #Distance2024{
     position: relative;
@@ -41,10 +46,48 @@ body {
     position: relative;
     top:-95px;
   }
-  p{
-    color:#dfd9d6;
-  }
+
   #countdown{
     color: rgb(218, 56, 56);
     font-size: 162px;
+  }
+
+  .large-header {
+    /* position:absolute;
+        bottom:0;
+        right:0;
+        margin-right: 230px;
+        margin-top:200px ; */
+        margin-top: 50px;
+        
+  }
+
+  #output {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 100;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  
+  }
+
+  .main-title {
+    margin-top: 50px;
+    margin-right: 50px;
+    position: absolute;
+    color: #f9f1e9;
+    /* text-align: center; */
+    /* top: 50%;
+    left: 50%; */
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    text-transform: uppercase;
+    /* font-size: 4.2em;
+    letter-spacing: 0.1em;
+    font-weight: 200; */
+  }
+  @media only screen and (max-width: 768px) {
+    .main-title {
+      font-size: 3em;
+    }
   }
