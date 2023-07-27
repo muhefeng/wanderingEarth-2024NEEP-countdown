@@ -6,22 +6,18 @@
 </head>
 
 <body style="background:url(./public/pic.jpg)center/cover no-repeat">
-  <div style="
-        position:absolute;
-        bottom:0;
-        right:0;
-        margin-right: 100px;
-        margin-bottom:100px ;
-    ">
-    <p id="Distance2024">距2024考研</p>
-    <div class="leftBord" style="float: left;">
-      <span id="remaining">还剩<span id="countdown"></span>天</span>
-      <p style="position: relative;top:-122px;margin-left: 20px;font-family: SimHei;">NATIONAL ENTRANCE EXAMINATION FOR
-        POSTGRADUATE</p>
-      <p style="position: relative;top:-122px;margin-left: 20px;font-family: SimHei;">IN <span id="pCountdown"></span>
-        DAYS</p>
-    </div>
+
+  <div id="pic" >
+    <p id="Distance2024" >距2024考研</p>
+    <span id="remaining"><span id="countdown"></span style="font-size: 80px;">天</span></span>
+    <p class="bottom-text" >NATIONAL ENTRANCE EXAMINATION FOR
+      POSTGRADUATE</p>
+    <p class="bottom-text" >IN <span id="pCountdown"></span>
+      DAYS</p>
   </div>
+
+
+
 
   <div id="large-header" class="large-header">
     <h1 class="main-title">
@@ -31,8 +27,10 @@
   </div>
 
 <script>
-  wallpaper();
-  function wallpaper() {
+
+  console.log("test")
+  ifshowtime();
+  function ifshowtime() {
   window.wallpaperPropertyListener = {
     applyUserProperties: function(properties) {
         if (properties.ifshowtime) {
